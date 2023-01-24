@@ -21,9 +21,9 @@ class HomeController extends Controller
 
         $usertype = Auth::user()->usertype;
 
-        if(&usertype=='1')
+        if($usertype=='1')
         {
-            retuen vieW('admin.adminhome');
+            return view('admin.adminhome');
          }
 
          else
